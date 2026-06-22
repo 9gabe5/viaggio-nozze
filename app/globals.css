@@ -5,12 +5,25 @@
 :root { --mare: #1B7FA6; }
 
 body {
-  background:
-    radial-gradient(circle at 20% 0%, rgba(91,184,212,.18), transparent 45%),
-    radial-gradient(circle at 90% 10%, rgba(242,201,76,.15), transparent 40%),
-    #FBF8F0;
   color: #16384A;
   -webkit-font-smoothing: antialiased;
+}
+
+/* Sfondo mare + limoni, fisso e attenuato */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: url('/sfondo.svg') center / cover no-repeat;
+  z-index: -2;
+}
+/* Velo chiaro per tenere leggibile il contenuto sopra */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: rgba(251, 248, 240, 0.62);
+  z-index: -1;
 }
 
 .card {

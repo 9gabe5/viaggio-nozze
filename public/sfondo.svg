@@ -1,0 +1,95 @@
+<svg width="1440" height="900" viewBox="0 0 1440 900" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FDF6E3"/>
+      <stop offset="1" stop-color="#FBE9C7"/>
+    </linearGradient>
+    <linearGradient id="seaFar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7FD4E0"/>
+      <stop offset="1" stop-color="#4FB8CE"/>
+    </linearGradient>
+    <linearGradient id="seaMid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2E9FC4"/>
+      <stop offset="1" stop-color="#1B7FA6"/>
+    </linearGradient>
+    <linearGradient id="seaNear" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0E6A8E"/>
+      <stop offset="1" stop-color="#0A5673"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FFF3C4"/>
+      <stop offset="1" stop-color="#FFE08A" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="leafGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4E8C3F"/>
+      <stop offset="1" stop-color="#2F6B2A"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Cielo -->
+  <rect width="1440" height="420" fill="url(#sky)"/>
+  <!-- Sole caldo -->
+  <circle cx="1130" cy="170" r="230" fill="url(#sun)"/>
+  <circle cx="1130" cy="170" r="62" fill="#FFEFAE"/>
+
+  <!-- Colline / costa siciliana lontana -->
+  <path d="M0 330 Q 180 270 360 312 T 760 300 Q 980 280 1180 318 T 1440 304 L1440 420 L0 420 Z" fill="#E2B57A" opacity="0.55"/>
+  <path d="M0 360 Q 240 318 520 352 T 1080 350 Q 1280 360 1440 344 L1440 420 L0 420 Z" fill="#C99A5B" opacity="0.5"/>
+
+  <!-- Mare a fasce -->
+  <rect y="416" width="1440" height="70"  fill="url(#seaFar)"/>
+  <rect y="484" width="1440" height="150" fill="url(#seaMid)"/>
+  <rect y="630" width="1440" height="270" fill="url(#seaNear)"/>
+
+  <!-- Riflessi/onde -->
+  <g stroke="#FFFFFF" stroke-opacity="0.35" stroke-linecap="round" fill="none">
+    <path d="M120 470 q 30 -8 60 0 t 60 0" stroke-width="3"/>
+    <path d="M520 510 q 30 -8 60 0 t 60 0" stroke-width="3"/>
+    <path d="M980 495 q 30 -8 60 0 t 60 0" stroke-width="3"/>
+    <path d="M260 560 q 36 -9 72 0 t 72 0" stroke-width="4"/>
+    <path d="M760 580 q 36 -9 72 0 t 72 0" stroke-width="4"/>
+    <path d="M1140 600 q 36 -9 72 0 t 72 0" stroke-width="4"/>
+    <path d="M120 690 q 44 -10 88 0 t 88 0" stroke-width="5" stroke-opacity="0.25"/>
+    <path d="M700 720 q 44 -10 88 0 t 88 0" stroke-width="5" stroke-opacity="0.25"/>
+  </g>
+
+  <!-- ====== Ramo di limoni in alto a sinistra ====== -->
+  <g transform="translate(-20,-10)">
+    <path d="M0 40 Q 120 70 220 150 Q 300 215 350 320" stroke="#3E7233" stroke-width="10" fill="none" stroke-linecap="round"/>
+    <!-- foglie -->
+    <g fill="url(#leafGrad)">
+      <path d="M120 70 q 55 -40 96 -18 q -30 50 -96 18 Z"/>
+      <path d="M210 150 q 60 -28 96 4 q -42 40 -96 -4 Z"/>
+      <path d="M300 230 q 58 -34 98 -6 q -40 44 -98 6 Z"/>
+      <path d="M70 60 q -20 -52 -64 -64 q -6 56 64 64 Z"/>
+    </g>
+    <!-- limoni -->
+    <g>
+      <ellipse cx="250" cy="120" rx="34" ry="44" fill="#F6CE2E" transform="rotate(28 250 120)"/>
+      <ellipse cx="244" cy="112" rx="12" ry="16" fill="#FFE680" opacity="0.7" transform="rotate(28 244 112)"/>
+      <circle cx="285" cy="92" r="5" fill="#5E8A3A"/>
+      <ellipse cx="345" cy="250" rx="34" ry="44" fill="#F4C61E" transform="rotate(-12 345 250)"/>
+      <ellipse cx="338" cy="242" rx="12" ry="16" fill="#FFE680" opacity="0.7" transform="rotate(-12 338 242)"/>
+      <circle cx="360" cy="214" r="5" fill="#5E8A3A"/>
+    </g>
+  </g>
+
+  <!-- ====== Ramo di limoni in basso a destra (primo piano) ====== -->
+  <g transform="translate(1180,560)">
+    <path d="M300 360 Q 180 300 130 200 Q 90 120 120 20" stroke="#356129" stroke-width="14" fill="none" stroke-linecap="round"/>
+    <g fill="url(#leafGrad)">
+      <path d="M120 60 q -64 -36 -110 -6 q 44 52 110 6 Z"/>
+      <path d="M138 150 q -68 -30 -112 8 q 50 48 112 -8 Z"/>
+      <path d="M170 240 q -66 -34 -114 2 q 48 50 114 -2 Z"/>
+      <path d="M150 30 q 30 -60 84 -70 q 8 64 -84 70 Z"/>
+    </g>
+    <g>
+      <ellipse cx="70" cy="120" rx="46" ry="60" fill="#F6CE2E" transform="rotate(-18 70 120)"/>
+      <ellipse cx="58" cy="108" rx="16" ry="22" fill="#FFE680" opacity="0.7" transform="rotate(-18 58 108)"/>
+      <circle cx="96" cy="78" r="7" fill="#5E8A3A"/>
+      <ellipse cx="120" cy="250" rx="46" ry="60" fill="#F4C61E" transform="rotate(14 120 250)"/>
+      <ellipse cx="108" cy="238" rx="16" ry="22" fill="#FFE680" opacity="0.7" transform="rotate(14 108 238)"/>
+      <circle cx="150" cy="214" r="7" fill="#5E8A3A"/>
+    </g>
+  </g>
+</svg>
