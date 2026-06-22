@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { --mare: #1B7FA6; }
+
+body {
+  background:
+    radial-gradient(circle at 20% 0%, rgba(91,184,212,.18), transparent 45%),
+    radial-gradient(circle at 90% 10%, rgba(242,201,76,.15), transparent 40%),
+    #FBF8F0;
+  color: #16384A;
+  -webkit-font-smoothing: antialiased;
+}
+
+.card {
+  @apply bg-white/80 backdrop-blur rounded-2xl shadow-sm border border-sabbia-dark/30;
+}
+.btn {
+  @apply inline-flex items-center justify-center rounded-full px-5 py-2.5 font-medium transition active:scale-95;
+}
+.btn-mare { @apply btn bg-mare text-white hover:bg-mare-dark; }
+.btn-ghost { @apply btn bg-white/70 text-notte border border-sabbia-dark/40 hover:bg-white; }
+
+.leaflet-container { border-radius: 1rem; }
