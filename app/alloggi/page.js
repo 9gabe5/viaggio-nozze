@@ -35,6 +35,10 @@ export default function Alloggi() {
                 {sposi && a.sito && <a href={a.sito} className="text-mare underline" target="_blank" rel="noreferrer">Sito web</a>}
                 {sposi && a.importo && <span className="text-terra-dark">€ {Number(a.importo).toFixed(2)}</span>}
                 {sposi && a.note && <span className="text-notte/60">{a.note}</span>}
+                {sposi && a.documento_url && !a.documento_url.startsWith('DA_CARICARE') && (
+                  <a href={a.documento_url} target="_blank" rel="noreferrer"
+                     className="btn-mare text-sm mt-2 self-start">📄 Apri ricevuta</a>
+                )}
               </div>
             </div>
           ))}

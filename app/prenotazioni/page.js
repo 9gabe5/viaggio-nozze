@@ -37,6 +37,11 @@ export default function Prenotazioni() {
                 {sposi && p.num_prenotazione && <span className="text-mare-dark">N. {p.num_prenotazione}</span>}
                 {sposi && p.dettagli && <span className="text-notte/60">{p.dettagli}</span>}
                 {sposi && p.importo && <span className="text-terra-dark">€ {Number(p.importo).toFixed(2)}</span>}
+                {sposi && p.contatto && <span className="text-notte/60">📞 {p.contatto}</span>}
+                {sposi && p.documento_url && !p.documento_url.startsWith('DA_CARICARE') && (
+                  <a href={p.documento_url} target="_blank" rel="noreferrer"
+                     className="btn-mare text-sm mt-2 self-start">📄 Apri documento</a>
+                )}
               </div>
             </div>
           ))}
