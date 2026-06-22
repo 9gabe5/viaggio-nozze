@@ -4,7 +4,7 @@ import Link from 'next/link';
 import SposiBadge from '../components/SposiGate';
 
 const SEZIONI = [
-  { href: '/itinerario',   emoji: '🗓️', titolo: 'Itinerario',   desc: 'Giorno per giorno' },
+  { href: '/itinerario',   emoji: '💑', titolo: 'Dove siamo',   desc: 'Il nostro percorso live' },
   { href: '/mappa',        emoji: '🗺️', titolo: 'Mappa',        desc: 'Le tappe del viaggio' },
   { href: '/alloggi',      emoji: '🏠', titolo: 'Alloggi',      desc: 'Dove dormiamo' },
   { href: '/prenotazioni', emoji: '✈️', titolo: 'Prenotazioni', desc: 'Voli, auto, biglietti' },

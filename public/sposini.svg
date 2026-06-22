@@ -1,0 +1,34 @@
+<svg width="64" height="72" viewBox="0 0 64 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- ombra -->
+  <ellipse cx="32" cy="68" rx="18" ry="4" fill="#0A5673" opacity="0.18"/>
+
+  <!-- ===== Sposo sinistro ===== -->
+  <!-- gambe -->
+  <rect x="18" y="44" width="5" height="18" rx="2.5" fill="#2A3B57"/>
+  <rect x="24" y="44" width="5" height="18" rx="2.5" fill="#2A3B57"/>
+  <!-- corpo / giacca -->
+  <path d="M16 32 q7 -6 14 0 l2 16 q-9 4 -18 0 Z" fill="#3E5B8C"/>
+  <!-- camicia -->
+  <path d="M22 30 l3 4 l3 -4 l1 14 h-8 Z" fill="#F4F0E6"/>
+  <!-- papillon -->
+  <path d="M23.5 33 l1.5 1.5 l1.5 -1.5 l-1.5 -1.5 Z" fill="#C0492F"/>
+  <!-- testa -->
+  <circle cx="25" cy="24" r="7" fill="#E8B98C"/>
+  <!-- capelli -->
+  <path d="M18.5 23 q1 -8 6.5 -8 q6 0 6.5 7 q-3 -4 -6.5 -3.5 q-4 0.5 -6.5 4.5 Z" fill="#3A2A22"/>
+
+  <!-- ===== Sposo destro ===== -->
+  <rect x="35" y="44" width="5" height="18" rx="2.5" fill="#2A3B57"/>
+  <rect x="41" y="44" width="5" height="18" rx="2.5" fill="#2A3B57"/>
+  <path d="M34 32 q7 -6 14 0 l2 16 q-9 4 -18 0 Z" fill="#5B7BB0"/>
+  <path d="M40 30 l3 4 l3 -4 l1 14 h-8 Z" fill="#F4F0E6"/>
+  <path d="M41.5 33 l1.5 1.5 l1.5 -1.5 l-1.5 -1.5 Z" fill="#1B7FA6"/>
+  <circle cx="43" cy="24" r="7" fill="#D49A6A"/>
+  <path d="M36.5 24 q0.5 -9 6.5 -9 q6.5 0 6.5 8 q-2.5 -5 -6.5 -4.5 q-4.5 0.5 -6.5 5.5 Z" fill="#1E140F"/>
+
+  <!-- mani che si tengono (al centro) -->
+  <circle cx="34" cy="42" r="3.2" fill="#E8B98C" stroke="#D49A6A" stroke-width="0.6"/>
+
+  <!-- cuoricino sopra -->
+  <path d="M32 6 c-2 -3 -7 -1 -7 3 c0 3 4 5 7 8 c3 -3 7 -5 7 -8 c0 -4 -5 -6 -7 -3 Z" fill="#E0556B"/>
+</svg>
