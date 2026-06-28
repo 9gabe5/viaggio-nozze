@@ -5,25 +5,9 @@
 :root { --mare: #1B7FA6; }
 
 body {
+  background-color: #FFFDF7; /* crema chiaro estivo, tinta unita */
   color: #16384A;
   -webkit-font-smoothing: antialiased;
-}
-
-/* Sfondo mare + limoni, fisso e attenuato */
-body::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  background: url('/sfondo.svg') center / cover no-repeat;
-  z-index: -2;
-}
-/* Velo chiaro per tenere leggibile il contenuto sopra */
-body::after {
-  content: '';
-  position: fixed;
-  inset: 0;
-  background: rgba(251, 248, 240, 0.62);
-  z-index: -1;
 }
 
 .card {

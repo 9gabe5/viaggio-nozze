@@ -13,16 +13,23 @@ export default function PercorsoLive() {
 
   if (tappe.length === 0) return null;
 
+  // Costruisce una data a mezzanotte LOCALE da 'YYYY-MM-DD'
+  // (evita lo shift UTC che faceva sballare il confronto di un giorno)
+  const dataLocale = (s) => {
+    const [y, m, d] = String(s).slice(0, 10).split('-').map(Number);
+    return new Date(y, m - 1, d);
+  };
+
   // Data di oggi (solo giorno, senza ora)
   const oggi = new Date(); oggi.setHours(0, 0, 0, 0);
-  const primo = new Date(tappe[0].data_inizio);
-  const ultimo = new Date(tappe[tappe.length - 1].data_fine);
+  const primo = dataLocale(tappe[0].data_inizio);
+  const ultimo = dataLocale(tappe[tappe.length - 1].data_fine);
 
   // Indice della tappa corrente
   let idxCorrente = -1; // -1 = non ancora partiti
   tappe.forEach((t, i) => {
-    const ini = new Date(t.data_inizio);
-    const fin = new Date(t.data_fine);
+    const ini = dataLocale(t.data_inizio);
+    const fin = dataLocale(t.data_fine);
     if (oggi >= ini && oggi <= fin) idxCorrente = i;
   });
 
@@ -50,7 +57,7 @@ export default function PercorsoLive() {
 
   const fmtRange = (a, b) => {
     const o = { day: '2-digit', month: 'short' };
-    return `${new Date(a).toLocaleDateString('it-IT', o)} – ${new Date(b).toLocaleDateString('it-IT', o)}`;
+    return `${dataLocale(a).toLocaleDateString('it-IT', o)} – ${dataLocale(b).toLocaleDateString('it-IT', o)}`;
   };
 
   return (
